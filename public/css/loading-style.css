@@ -4,7 +4,7 @@ html {
   font-weight: 100;
   text-shadow: #14f074;
   background-color: #0f0000;
-  background-image: url(http://api.thumbr.it/whitenoise-200x200.png?background=00000000&noise=626262&density=15&opacity=15);
+  background-image: url(/public/images/background-screen.png);
   background-size: 100px;
   color: #14f074;
   height: 100%;
@@ -65,16 +65,6 @@ body {
   grid-column: 2/2;
 }
 
-.scanline {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(255, 255, 255, 0.03);
-  animation: scanline 6s linear infinite;
-}
-
 .loading-bar--unloaded {
   color: #fff;
   text-shadow: 0 0 5px #fff;
@@ -101,18 +91,6 @@ p {
 
 * + .loading-bar {
   padding-top: 1vw;
-}
-
-@keyframes scanline {
-  0.01% {
-    transform: translatey(-100%);
-  }
-  99.99% {
-    transform: translatey(0);
-  }
-  100% {
-    transform: translatey(-100%);
-  }
 }
 
 @keyframes glitch {
