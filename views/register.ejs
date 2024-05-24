@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register - Quadra VIP</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="scale-container">
+    <div class="container on">
+      <div class="screen">
+        <h3 class="title">
+          <% if (success) { %>
+            REGISTRATION SUCCESSFUL. YOU CAN NOW LOG IN.
+          <% } else { %>
+            REGISTER FOR QUADRA VIP
+          <% } %>
+        </h3>
+        <div class="box--outer">
+          <div class="box">
+            <div class="box--inner">
+              <div class="content">
+                <div class="holder">
+                  <% if (!success) { %>
+                    <form method="post" action="/register">
+                      <div class="row">
+                        <div class="col col__left label">Username</div>
+                        <div class="col col__center">
+                          <input type="text" id="register-username" name="username" required="required" placeholder="Username" maxlength="32" />
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col col__left label">Password</div>
+                        <div class="col col__center">
+                          <input type="password" id="register-password" name="password" required="required" placeholder="Password" maxlength="32" autocomplete="new-password" />
+                        </div>
+                      </div>
+                      <div class="row">
+                        <button type="submit" id="register-submit" name="submit">[REGISTER]</button>
+                      </div>
+                    </form>
+                  <% } %>
+                  <a href="/" id="login-link">BACK TO LOGIN</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
