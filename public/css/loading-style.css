@@ -4,8 +4,7 @@ html {
   font-weight: 100;
   text-shadow: #14f074;
   background-color: #0f0000;
-  background-image: url(/public/images/background-screen.png);
-  background-size: 100px;
+  background: url(/images/background-screen.png) #000;
   color: #14f074;
   height: 100%;
   text-align: center;
@@ -128,3 +127,7 @@ p {
     transform: translate(-22px, 5px) skew(21deg);
   }
 }
+
+/* ----------------------------------- */
+
+

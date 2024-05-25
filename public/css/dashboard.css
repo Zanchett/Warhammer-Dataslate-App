@@ -7,16 +7,16 @@
   body {
     --colors-bg--300: #1e181e;
     --colors-bg--500: #191a1e;
-    --colors-primary--200: #f4908b;
-    --colors-primary--300: #ea6f69;
-    --colors-primary--500: #e8615a;
-    --colors-primary--600: #9c3230;
-    --colors-primary--700: #5e2122;
-    --colors-primary--800: #451717;
-    --colors-primary--900: #3c181a;
-    --colors-secondary--500: #2be4ea;
-    --colors-secondary--900: #295459;
-    --colors-tertiary--500: #fed33f;
+    --colors-primary--200: #ffffff;
+    --colors-primary--300: #14f074;
+    --colors-primary--500: #14f074;
+    --colors-primary--600: #14f074;
+    --colors-primary--700: #215e2b;
+    --colors-primary--800: #14f074;
+    --colors-primary--900: #005324;
+    --colors-secondary--500: #14f074;
+    --colors-secondary--900: #005324;
+    --colors-tertiary--500: #14f074;
     --colors-on_bg--500: var(--colors-primary--500);
     --colors-on_tertiary--500: var(--colors-bg--300);
     --colors-on_primary--500: var(--colors-primary--200);
@@ -39,12 +39,7 @@
       0 100%
     );
   
-    background-color: var(--colors-bg--500);
-    background-image: radial-gradient(
-      ellipse at 33% 10%,
-      #461616 0%,
-      transparent 75%
-    );
+    background: url(/images/background-screen.png) #000;
     background-repeat: no-repeat;
     color: var(--colors-on_bg--500);
     font-family: var(--fonts-primary);
@@ -124,7 +119,7 @@
   
   .nav-section__header {
     background-color: var(--colors-bg--300);
-    border: 1px solid #5d2322;
+    border: 1px solid #14f074;
     border-radius: 3px;
     margin-bottom: 0.5rem;
     padding: 0.5rem 0.75rem;
@@ -135,7 +130,7 @@
   }
   
   .nav-section__title {
-    color: #2be4ea;
+    color: #14f074;
     font-size: 1rem;
     margin: 0;
   }
@@ -198,14 +193,14 @@
   .nav-section .nav__link:focus,
   .nav-section .nav__link:hover {
     background-color: var(--colors-bg--300);
-    border: 1px solid #5d2322;
+    border: 1px solid #225d31;
   }
   
   .nav-section .nav__link--active,
   .nav-section .nav__link.nav__link--active:focus,
   .nav-section .nav__link.nav__link--active:hover {
-    background-color: #391419;
-    border-color: #9c3230;
+    background-color: #14391d;
+    border-color: #309c39;
   }
   
   .channel-link,
@@ -567,6 +562,6 @@
   
   .segment-topbar__aside {
     align-self: flex-start;
-    box-shadow: -6px -4px 24px rgba(156, 50, 48, 0.4);
+    box-shadow: -6px -4px 24px rgba(52, 156, 48, 0.4);
   }
   

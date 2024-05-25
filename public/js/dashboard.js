@@ -6,7 +6,7 @@ function App() {
     <div className="app-skeleton">
       <header className="app-header">
         <div className="app-header__anchor">
-          <span className="app-header__anchor__text">Night-City NetWire</span>
+          <span className="app-header__anchor__text">Empire Dataslate</span>
         </div>
         <nav>
           <ul className="nav">
@@ -45,9 +45,9 @@ function App() {
             </div>
           </form>
 
-          <NavSection renderTitle={(props) => <h2 {...props}>Feeds</h2>}>
+          <NavSection renderTitle={(props) => <h2 {...props}>Groups</h2>}>
             <ChannelNav
-              activeChannel={{ id: "a0cc", name: "Watson" }}
+              activeChannel={{ id: "a0cc", name: "Group Name" }}
               channels={FIXTURES.feed}
             />
           </NavSection>
@@ -61,10 +61,10 @@ function App() {
             <div className="segment-topbar">
               <div className="segment-topbar__header">
                 <TextOverline className="segment-topbar__overline">
-                  NetWire_Seed: d869db7fe62fb07c25a0403ecaea55031744b5fb
+                  Empire_Seed: d869db7fe62fb07c25a0403ecaea55031744b5fb
                 </TextOverline>
                 <TextHeading4 className="segment-topbar__title">
-                  <ChannelLink name="Watson" />
+                  <ChannelLink name="Group Name" />
                 </TextHeading4>
               </div>
               <div className="segment-topbar__aside">
@@ -114,15 +114,12 @@ function App() {
         </div>
         <div className="app-b">
           <Pad>
-            <TextHeading3 $as="h4">What's this?</TextHeading3>
+            <TextHeading3 $as="h4">Warning Message</TextHeading3>
             <TextParagraph1>
-              A <em>fake</em> Slack or Discord type of app inspired by Cyberpunk
-              2077. This app is static, eg. not implementing much logic.
+              Mensagem de avisa para quando acontecer algo importante
             </TextParagraph1>
             <TextParagraph1>
-              The goal is: showcasing a start of a UI kit. If you've played the
-              game, you' might be able to pick-up some similarities with the
-              in-game menus.
+              O objetivo é deixar o mais imersivo possivel para todos hehe.
             </TextParagraph1>
           </Pad>
         </div>
@@ -148,12 +145,12 @@ function FeedMessage({ message }) {
       <div className="message__body">
         <div>
           {
-            "I got a gig lined up in Watson, no biggie. If you prove useful, expect more side gigs coming your way. I need a half-decent netrunner. Hit me up, provide credentials, eddies on completion."
+            "mensagem de texto teste"
           }
         </div>
       </div>
       <div className="message__footer">
-        <span className="message__authoring">V. M. Vargas</span>
+        <span className="message__authoring">Hunfus</span>
         {" - 11:04pm"}
       </div>
     </div>
@@ -354,38 +351,38 @@ const FIXTURES = {
   headerMenu: [
     { notificationCount: 0, text: "Home" },
     { isActive: true, notificationCount: 11, text: "Messages" },
-    { notificationCount: 0, text: "Shop" },
+    { notificationCount: 0, text: "Hacking" },
     { notificationCount: 0, text: "Map" },
     { notificationCount: 0, text: "Files" }
   ],
   feed: [
-    { id: "5ba5", name: "Afterlife", unread: 3 },
-    { id: "4f22", name: "NCPD-Gigs" },
-    { id: "fee9", name: "Pacifica" },
-    { id: "a0cc", name: "Watson" },
-    { id: "dee3", name: "_T_SQUAD", isPrivate: true, unread: 2 }
+    { id: "5ba5", name: "Arbites", unread: 3 },
+    { id: "4f22", name: "Group Name 2" },
+    { id: "fee9", name: "Inquisition" },
+    { id: "a0cc", name: "Group Name" },
+    { id: "dee3", name: "Group Name 4", isPrivate: true, unread: 2 }
   ],
   conversation: [
     {
       id: "cc23",
       isOnline: true,
       unread: 5,
-      name: "Rogue Amendiares"
+      name: "Orion"
     },
-    { id: "95b4", isOnline: true, name: "Takemura", unread: 1 },
-    { id: "10cf", name: "Wakado O., Regina Jones" },
-    { id: "e466", name: "Dexter DeShawn" },
-    { id: "ca0b", name: "Megabuilding H10 Administration" }
+    { id: "95b4", isOnline: true, name: "Hunfus", unread: 1 },
+    { id: "10cf", name: "Storm" },
+    { id: "e466", name: "Vitris" },
+    { id: "ca0b", name: "Zane" }
   ],
   messages: [
     {
       id: "fd0cf",
       content:
-        "I got a gig lined up in Watson, no biggie. If you prove useful, expect more side gigs coming your way. I need a half-decent netrunner. Hit me up, provide credentials, eddies on completion.",
+        "Mais um test muito maluco ai papai",
       dateTime: "2077-10-09T11:04:57Z",
       author: {
         id: "d12c",
-        name: "V.M. Vargas"
+        name: "Storm"
       }
     }
   ]
