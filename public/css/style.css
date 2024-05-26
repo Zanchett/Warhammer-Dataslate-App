@@ -1,4 +1,3 @@
-/* Importing Google Font */
 @import url(https://fonts.googleapis.com/css?family=Share+Tech+Mono);
 
 .image-replacement {
@@ -17,11 +16,11 @@ html {
   margin: 0;
   padding: 0;
   height: 100%;
-  user-select: none; /* Prevent selection by default */
+  user-select: none; 
 }
 
 input, textarea {
-  user-select: text; /* Allow selection for input and textarea elements */
+  user-select: text; 
 }
 
 body {
@@ -162,18 +161,18 @@ body {
   max-width: 100%;
   overflow: visible;
   outline: 0;
-  background: #000; /* Set default background color */
-  color: #14f074; /* Inherit color for text */
+  background: #000; 
+  color: #14f074;  
   font: inherit;
   line-height: normal;
-  user-select: text; /* Make input fields selectable */
-  caret-color: #14f074; /* Customize caret color */
+  user-select: text; 
+  caret-color: #14f074; 
 }
 
 #email::placeholder,
 #login::placeholder,
 #password::placeholder {
-  color: #14f074; /* Placeholder text color */
+  color: #14f074; 
 }
 
 #email::-moz-selection,
@@ -553,8 +552,6 @@ body.off::after {
   animation-fill-mode: forwards;
 }
 
-/* Add this to your existing CSS */
-
 /* Styles for input fields */
 #register-username,
 #register-password {
@@ -565,17 +562,17 @@ body.off::after {
   max-width: 100%;
   overflow: visible;
   outline: 0;
-  background: #000; /* Set default background color */
-  color: #14f074; /* Inherit color for text */
+  background: #000; 
+  color: #14f074; 
   font: inherit;
   line-height: normal;
-  user-select: text; /* Make input fields selectable */
-  caret-color: #14f074; /* Customize caret color */
+  user-select: text; 
+  caret-color: #14f074; 
 }
 
 #register-username::placeholder,
 #register-password::placeholder {
-  color: #14f074; /* Placeholder text color */
+  color: #14f074; 
 }
 
 #register-username::-moz-selection,

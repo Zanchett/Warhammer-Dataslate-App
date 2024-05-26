@@ -4,31 +4,24 @@ const del = require('del');
 
 const { config } = require('../package.json');
 
-/*
- * Typical PreProcessor workflow
- * Reads files from /src/ directory, runs processes, and outputs to /dist/ directory
- *
- * Pass in a `rename` option to rename the processed files
- * Pass in a `cleanup` parameter to remove unnecessary files
- */
 function makeTask(opts) {
   const { key, pipe = [] } = opts;
 
   function runTask() {
-    // Gather the files from the entry directory (dir)
+    
     src(
       opts.src.map((file) => config.srcDir + file),
       {
         sourcemaps: config.sourcemaps
       }
-    ).pipe(dest(config.distDir)); // Copy to the Dist dir
+    ).pipe(dest(config.distDir)); 
 
     const filesToModify = src(
       opts.src.map((file) => config.distDir + file),
       {
         sourcemaps: config.sourcemaps
       }
-    ); // Make sure we include any additional files from the dist dir
+    ); 
 
     const pipes = pipe.map((processor) => {
       const fn = require(processor.require);
@@ -39,14 +32,14 @@ function makeTask(opts) {
       pipes.push(makeRename(opts.rename));
     }
 
-    // Pipe the files through the all of the task's functions
+    
     return (
       pipes
         .reduce((stream, processor) => {
           return stream.pipe(processor);
         }, filesToModify)
 
-        // Pipe the output to the destination
+       
         .pipe(
           dest(config.distDir, {
             sourcemaps: '.'
@@ -64,11 +57,9 @@ function makeTask(opts) {
   return runTask;
 }
 
-/*
- * Rename files in the pipeline.
- */
+
 function makeRename(opts) {
-  // Find & replace of the basename if `find` option passed in
+  
   if (opts.find) {
     return rename(function (path) {
       path.basename = path.basename.replace(opts.find, opts.replace);
@@ -78,9 +69,7 @@ function makeRename(opts) {
   return rename(opts);
 }
 
-/*
- * Delete unnecessary files in the /dist/ directory
- */
+
 function makeCleanup(opts) {
   function runCleanup(done) {
     const filesToDelete = Array.isArray(opts.cleanup) ? opts.cleanup : opts.src;
