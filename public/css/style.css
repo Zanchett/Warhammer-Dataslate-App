@@ -1,4 +1,3 @@
-/* Importing Google Font */
 @import url(https://fonts.googleapis.com/css?family=Share+Tech+Mono);
 
 .image-replacement {
@@ -17,11 +16,11 @@ html {
   margin: 0;
   padding: 0;
   height: 100%;
-  user-select: none; /* Prevent selection by default */
+  user-select: none; 
 }
 
 input, textarea {
-  user-select: text; /* Allow selection for input and textarea elements */
+  user-select: text; 
 }
 
 body {
@@ -162,18 +161,18 @@ body {
   max-width: 100%;
   overflow: visible;
   outline: 0;
-  background: #000; /* Set default background color */
-  color: #14f074; /* Inherit color for text */
+  background: #000; 
+  color: #14f074;  
   font: inherit;
   line-height: normal;
-  user-select: text; /* Make input fields selectable */
-  caret-color: #14f074; /* Customize caret color */
+  user-select: text; 
+  caret-color: #14f074; 
 }
 
 #email::placeholder,
 #login::placeholder,
 #password::placeholder {
-  color: #14f074; /* Placeholder text color */
+  color: #14f074; 
 }
 
 #email::-moz-selection,
@@ -306,164 +305,13 @@ body {
   }
 }
 
-.flash {
-  -webkit-animation: flashText 1s ease-out alternate infinite;
-  animation: flashText 1s ease-out alternate infinite;
-}
 
-@-webkit-keyframes flashText {
-  0% {
-    opacity: .3;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes flashText {
-  0% {
-    opacity: .3;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 
 .typewriter .typewriter-line {
   visibility: hidden;
 }
 
-@-webkit-keyframes flicker {
-  0% {
-    opacity: .86139;
-  }
-  5% {
-    opacity: .12793;
-  }
-  10% {
-    opacity: .36759;
-  }
-  15% {
-    opacity: .9766;
-  }
-  20% {
-    opacity: .61364;
-  }
-  25% {
-    opacity: .94477;
-  }
-  30% {
-    opacity: .57811;
-  }
-  35% {
-    opacity: .03416;
-  }
-  40% {
-    opacity: .21835;
-  }
-  45% {
-    opacity: .62054;
-  }
-  50% {
-    opacity: .89452;
-  }
-  55% {
-    opacity: .89997;
-  }
-   60% {
-    opacity: .37872;
-  }
-  65% {
-    opacity: .04929;
-  }
-  70% {
-    opacity: .14477;
-  }
-  75% {
-    opacity: .27512;
-  }
-  80% {
-    opacity: .84701;
-  }
-  85% {
-    opacity: .85952;
-  }
-  90% {
-    opacity: .18435;
-  }
-  95% {
-    opacity: .83358;
-  }
-  100% {
-    opacity: .48542;
-  }
-}
 
-@keyframes flicker {
-  0% {
-    opacity: .86139;
-  }
-  5% {
-    opacity: .12793;
-  }
-  10% {
-    opacity: .36759;
-  }
-  15% {
-    opacity: .9766;
-  }
-  20% {
-    opacity: .61364;
-  }
-  25% {
-    opacity: .94477;
-  }
-  30% {
-    opacity: .57811;
-  }
-  35% {
-    opacity: .03416;
-  }
-  40% {
-    opacity: .21835;
-  }
-  45% {
-    opacity: .62054;
-  }
-  50% {
-    opacity: .89452;
-  }
-  55% {
-    opacity: .89997;
-  }
-  60% {
-    opacity: .37872;
-  }
-  65% {
-    opacity: .04929;
-  }
-  70% {
-    opacity: .14477;
-  }
-  75% {
-    opacity: .27512;
-  }
-  80% {
-    opacity: .84701;
-  }
-  85% {
-    opacity: .85952;
-  }
-  90% {
-    opacity: .18435;
-  }
-  95% {
-    opacity: .83358;
-  }
-  100% {
-    opacity: .48542;
-  }
-}
 
 @-webkit-keyframes steady {
   from {
@@ -501,8 +349,6 @@ body::after {
   background: rgba(49, 45, 45, .1);
   opacity: 0;
   pointer-events: none;
-  -webkit-animation: flicker .15s infinite, steady 4s;
-  animation: flicker .15s infinite, steady 4s;
 }
 
 body.off {
@@ -706,8 +552,6 @@ body.off::after {
   animation-fill-mode: forwards;
 }
 
-/* Add this to your existing CSS */
-
 /* Styles for input fields */
 #register-username,
 #register-password {
@@ -718,17 +562,17 @@ body.off::after {
   max-width: 100%;
   overflow: visible;
   outline: 0;
-  background: #000; /* Set default background color */
-  color: #14f074; /* Inherit color for text */
+  background: #000; 
+  color: #14f074; 
   font: inherit;
   line-height: normal;
-  user-select: text; /* Make input fields selectable */
-  caret-color: #14f074; /* Customize caret color */
+  user-select: text; 
+  caret-color: #14f074; 
 }
 
 #register-username::placeholder,
 #register-password::placeholder {
-  color: #14f074; /* Placeholder text color */
+  color: #14f074; 
 }
 
 #register-username::-moz-selection,
